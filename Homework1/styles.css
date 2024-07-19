@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    
+}
+
+.form-group {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-group h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.names, .pwd-group, .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.names .input-subgroup,.pwd-group .input-subgroup,.buttons .input-subgroup {
+    flex: 1;
+}
+
+#register {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c9cdf;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+#signIn {
+    width: 100%;
+    padding: 10px;
+    background-color: #5CB85C;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 698px) {
+    .names, .pwd-group, .buttons  {
+        flex-direction: column;
+    }
+}
+
+#iAgree {
+    margin-bottom: 15px
+}
+
+.agree {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+  }
+
+.check-group {
+    width: 30%;
+    min-width: 60px;
+  }
+
+#tac {
+    color: #5c9cdf;
+    text-decoration: none;
+}
+#registerTac {
+    background-color: #5c9cdf;
+    color: #fefbfb;
+    font-size: 0.82rem;
+    text-decoration: none;
+    padding: 2px;
+}
