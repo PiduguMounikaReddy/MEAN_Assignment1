@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.scoreCounter {
+    margin: 10px 0;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gameBlock {
+    border: 2px solid brown;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mole {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.snake {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.timer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
